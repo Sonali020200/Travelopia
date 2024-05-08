@@ -5,6 +5,7 @@ import { FaRankingStar } from "react-icons/fa6";
 import { LuBadgePercent } from "react-icons/lu";
 import PackageCard from "./PackageCard";
 import { useNavigate } from "react-router";
+import video from '../assets/images/video.mp4';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -80,10 +81,14 @@ const Home = () => {
   return (
     <div className="main w-full">
       <div className="w-full flex flex-col">
-        <div className="backaground_image w-full"></div>
+      <div className="backaground_video w-full">
+      <video autoPlay loop muted className="video-background">
+                <source src={video} type="video/mp4" />
+            </video>
+        </div>
         <div className="top-part w-full gap-2 flex flex-col">
           <h1 className="text-white text-4xl text-center font-bold underline mb-2">
-            The Travel Index[0]
+            The Travelopia
           </h1>
           <h1 className="text-white text-sm text-center xsm:text-lg font-semibold">
             Make Your Travel Dream Come True With Our Amazing Packages

@@ -1,12 +1,25 @@
-/* body{
-    background: red;
-} */
-.backaground_image{
-    background: url("../../assets/images/bg_jmg1.jpg") no-repeat;
-    background-size: cover;
-    filter: brightness(0.7);
-    height: 340px;
+.backaground_video {
+    position: relative;
+    height: 500px; 
+    overflow: hidden;
 }
+
+.video_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); 
+}
+
 .top-part{
     position: absolute;
     height: 340px;
@@ -16,11 +29,11 @@
 }
 
 .offers_img{
-    background: url("https://plus.unsplash.com/premium_photo-1661948102098-440fc72976a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
+    background: url("https://www.shutterstock.com/image-vector/travel-advertising-ads-promotion-banner-260nw-1141679285.jpg") no-repeat;
     background-size: cover;
     /* background-position: 0px -160px; */
     width: 100%;
-    height: 250px;
+    height: 400px;
     filter: hue-rotate(188deg) brightness(0.8);
 }
 
